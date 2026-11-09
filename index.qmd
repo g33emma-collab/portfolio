@@ -1,0 +1,78 @@
+---
+title: "Predicting Final Mathematics Grades Based on Student Demographics"
+subtitle: "Using a students demographics to predict their final grade to understand what might contribute to a student preforming well in a mathematics class and who might need extra support"
+author: "Alicia Bemis, Emma Gee"
+date: last-modified
+description: "Prediction of final grades based on student demographics"
+---
+
+**Narrative word count:** Replace with a number from 750 to 1,000.
+
+::: {.callout-tip}
+This template suggests one way to tell the story. You may rename, combine, or reorder headings and add, remove, or move code chunks. Use plots, tables, selected model output, and prose in whatever combination best communicates your evidence. Keep every required part easy to find, use no more than four primary figures or tables, and delete this note and all bold prompts before submitting.
+:::
+
+## The question
+
+**In one or two short paragraphs, introduce the setting, audience, focused research question, data source, observational unit, response, important predictors, and one important data limitation. Lead with what makes the question worth answering.**
+
+Our question that we're looking at with this data is how well can we predict a student’s final grade in mathematics based on their demographics and characteristics? Because our data is specifically from Portuguese schools, the question is first applicable to Portuguese schools, even if it can eventually be generalized to schools in different languages as well. This research question can help inform school counselors, school districts, and even the student's families to help them identify some students who may be at risk of failing or getting lower grades, and thus help those students by providing support in whichever way possible. By doing this analysis, it could help understand what effects a students grade and see if we can predict what their final grade is so that support can be offered to help them improve it. 
+
+Our response variable is the final grade (G3). There are 32 predictors total and some of the predictors we believe will be important are the number of past class failures, the student’s sex and age, whether they live somewhere urban or rural, who their guardian is (mother, father, or other), their level of weekend alcohol consumption, and whether they take extra paid classes within their math class.
+
+This is our citation for the data we will be using throughout this project: Cortez, P. (2008). Student Performance [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5TG7T.
+
+
+
+## What the baseline shows
+
+**Describe and justify a simple course-based baseline regression model. Interpret the result that best establishes the rest of the story, including its direction, magnitude, scale, and uncertainty. Explain one limitation or unresolved pattern that motivates deeper analysis.**
+
+```{r}
+# Load packages and data, document preparation, and fit the baseline.
+```
+
+```{r}
+# Show a primary figure or table only if it helps answer the question.
+```
+
+## Going beyond the baseline
+
+**Use two STAT 330 method families. Give each part a descriptive heading that states the question or finding, not an assignment label. Explain why you chose each method, how you checked it, and what it adds to the answer.**
+
+### Replace with a question or finding
+
+**Present one method and its most useful evidence.**
+
+```{r}
+# Analysis code for this part.
+```
+
+### Replace with another question or finding
+
+**Present a method from a different family and its most useful evidence. Combine this with the preceding subsection if that creates a clearer story.**
+
+```{r}
+# Analysis code for this part.
+```
+
+## A new direction with AI
+
+**Explain the need revealed by your preliminary course-based work, the extension you implemented with AI support, and what it contributes to the same research question. Show its substantive result on this page and summarize your independent checks. If the extension is an untaught comparator, evaluate it against the core course-based model. Link to the AI-use record instead of placing a transcript here.**
+
+```{r}
+# Implement the verified extension or show its most useful result.
+```
+
+Details are in the [AI-use record](ai-use.qmd).
+
+## What this means
+
+**Answer the research question directly. Distinguish statistical evidence from practical importance, state the most consequential limitations, and suggest one sensible next step. Avoid causal claims unless the study design supports them.**
+
+## Data and code
+
+- **Data:** Replace with a working source link or citation and any brief acquisition note needed to reproduce the project.
+- **Repository:** Replace with your repository URL.
+- [AI-use record](ai-use.qmd)
+- **Other sources:** Cite package documentation, articles, code, and other sources that materially informed the work.
