@@ -51,49 +51,49 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "",
     "text": "Narrative word count: Replace with a number from 750 to 1,000."
   },
   {
     "objectID": "index.html#the-question",
     "href": "index.html#the-question",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "The question",
-    "text": "The question\nIn one or two short paragraphs, introduce the setting, audience, focused research question, data source, observational unit, response, important predictors, and one important data limitation. Lead with what makes the question worth answering."
+    "text": "The question\nIn one or two short paragraphs, introduce the setting, audience, focused research question, data source, observational unit, response, important predictors, and one important data limitation. Lead with what makes the question worth answering.\nOur question that we’re looking at with this data is how well can we predict a student’s final grade in mathematics based on their demographics and characteristics? Because our data is specifically from Portuguese schools, the question is first applicable to Portuguese schools, even if it can eventually be generalized to schools in different languages as well. This research question can help inform school counselors, school districts, and even the student’s families to help them identify some students who may be at risk of failing or getting lower grades, and thus help those students by providing support in whichever way possible. By doing this analysis, it could help understand what effects a students grade and see if we can predict what their final grade is so that support can be offered to help them improve it.\nOur response variable is the final grade (G3). There are 32 predictors total and some of the predictors we believe will be important are the number of past class failures, the student’s sex and age, whether they live somewhere urban or rural, who their guardian is (mother, father, or other), their level of weekend alcohol consumption, and whether they take extra paid classes within their math class. The observational unit from the data is a secondary education student in mathematics at one of two Portuguese schools. One limitation for this data set is the fact that it’s based on different questionaires that the students took, meaning it can be more subjective.\nThis is our citation for the data we will be using throughout this project: Cortez, P. (2008). Student Performance [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5TG7T."
   },
   {
     "objectID": "index.html#what-the-baseline-shows",
     "href": "index.html#what-the-baseline-shows",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "What the baseline shows",
     "text": "What the baseline shows\nDescribe and justify a simple course-based baseline regression model. Interpret the result that best establishes the rest of the story, including its direction, magnitude, scale, and uncertainty. Explain one limitation or unresolved pattern that motivates deeper analysis.\n\n\nShow code\n# Load packages and data, document preparation, and fit the baseline.\n\n\n\n\nShow code\n# Show a primary figure or table only if it helps answer the question."
   },
   {
     "objectID": "index.html#going-beyond-the-baseline",
     "href": "index.html#going-beyond-the-baseline",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "Going beyond the baseline",
     "text": "Going beyond the baseline\nUse two STAT 330 method families. Give each part a descriptive heading that states the question or finding, not an assignment label. Explain why you chose each method, how you checked it, and what it adds to the answer.\n\nReplace with a question or finding\nPresent one method and its most useful evidence.\n\n\nShow code\n# Analysis code for this part.\n\n\n\n\nReplace with another question or finding\nPresent a method from a different family and its most useful evidence. Combine this with the preceding subsection if that creates a clearer story.\n\n\nShow code\n# Analysis code for this part."
   },
   {
     "objectID": "index.html#a-new-direction-with-ai",
     "href": "index.html#a-new-direction-with-ai",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "A new direction with AI",
     "text": "A new direction with AI\nExplain the need revealed by your preliminary course-based work, the extension you implemented with AI support, and what it contributes to the same research question. Show its substantive result on this page and summarize your independent checks. If the extension is an untaught comparator, evaluate it against the core course-based model. Link to the AI-use record instead of placing a transcript here.\n\n\nShow code\n# Implement the verified extension or show its most useful result.\n\n\nDetails are in the AI-use record."
   },
   {
     "objectID": "index.html#what-this-means",
     "href": "index.html#what-this-means",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "What this means",
     "text": "What this means\nAnswer the research question directly. Distinguish statistical evidence from practical importance, state the most consequential limitations, and suggest one sensible next step. Avoid causal claims unless the study design supports them."
   },
   {
     "objectID": "index.html#data-and-code",
     "href": "index.html#data-and-code",
-    "title": "Replace with a specific, informative title",
+    "title": "Predicting Final Mathematics Grades Based on Student Demographics",
     "section": "Data and code",
     "text": "Data and code\n\nData: Replace with a working source link or citation and any brief acquisition note needed to reproduce the project.\nRepository: Replace with your repository URL.\nAI-use record\nOther sources: Cite package documentation, articles, code, and other sources that materially informed the work."
   }

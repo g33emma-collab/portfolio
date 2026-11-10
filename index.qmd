@@ -3,7 +3,7 @@ title: "Predicting Final Mathematics Grades Based on Student Demographics"
 subtitle: "Using a students demographics to predict their final grade to understand what might contribute to a student preforming well in a mathematics class and who might need extra support"
 author: "Alicia Bemis, Emma Gee"
 date: last-modified
-description: "Prediction of final grades based on student demographics"
+description: "Prediction of final grades using student demographics"
 ---
 
 **Narrative word count:** Replace with a number from 750 to 1,000.
@@ -19,6 +19,7 @@ This template suggests one way to tell the story. You may rename, combine, or re
 Our question that we're looking at with this data is how well can we predict a student’s final grade in mathematics based on their demographics and characteristics? Because our data is specifically from Portuguese schools, the question is first applicable to Portuguese schools, even if it can eventually be generalized to schools in different languages as well. This research question can help inform school counselors, school districts, and even the student's families to help them identify some students who may be at risk of failing or getting lower grades, and thus help those students by providing support in whichever way possible. By doing this analysis, it could help understand what effects a students grade and see if we can predict what their final grade is so that support can be offered to help them improve it. 
 
 Our response variable is the final grade (G3). There are 32 predictors total and some of the predictors we believe will be important are the number of past class failures, the student’s sex and age, whether they live somewhere urban or rural, who their guardian is (mother, father, or other), their level of weekend alcohol consumption, and whether they take extra paid classes within their math class.
+The observational unit from the data is a secondary education student in mathematics at one of two Portuguese schools. One limitation for this data set is the fact that it's based on different questionaires that the students took, meaning it can be more subjective.
 
 This is our citation for the data we will be using throughout this project: Cortez, P. (2008). Student Performance [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5TG7T.
 
