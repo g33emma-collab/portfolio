@@ -29,12 +29,53 @@ This is our citation for the data we will be using throughout this project: Cort
 
 **Describe and justify a simple course-based baseline regression model. Interpret the result that best establishes the rest of the story, including its direction, magnitude, scale, and uncertainty. Explain one limitation or unresolved pattern that motivates deeper analysis.**
 
+We did this baseline model because it included a lot of the different predictors that we were interested in seeing their relationship with a student's final grade, and a lot of them we saw at least a minor difference in the initial plots. 
+
+Interpreting the coefficient for the failures predictor:
+
+Assuming that the assumptions behind this model are accurate and multicollinearity is not a big issue, then holding a student's gender, age, geographical address(urban vs. rural), guardian, weekly alcohol content, and whether or not they’re paying for outside support (like tutors) constant, an increase of one past failed class is typically associated with an estimated 1.8989 decrease in average final grade in mathematics for a student at one of these two Portuguese schools. And, again only if the assumptions hold, we are 95% confident that the true coefficient for the association between past class failures and a student’s final grade in math is between a 2.547 decrease in final grade to a 1.251 decrease on average. 
+
+There’s a lot of room for improvement from this initial model. We haven’t done any diagnostic tests to see if this model is appropriate for our data and if the inferences we make are justified. We also don’t know if there is a relationship between any of the predictors that we used so we might also have a multicollinearity issue which would make the coefficient estimates unstable. On top of all of that, these might not be the best predictors at explaining the data, or predicting a student's final grade, especially since we just picked them by looking at the initial one-at-a-time plots. There’s probably a better combination of predictors that would be better at predicting a response and we’ll have to do more analysis to figure out which ones those are. 
+
 ```{r}
 # Load packages and data, document preparation, and fit the baseline.
+library(tidyverse)
+library(car)
+library(bestglm)
+library(glmnet)
+library(ggfortify)
+library(rsample)
+library(yardstick)
+library(broom)
+library(lmtest)
+
+student <- read.csv("C:/Users/Emma/Downloads/student+performance/student/student-mat.csv", sep = ";")
+c(number_of_observations = nrow(student), number_of_predictors = ncol(student) - 1)
+
+student <- student %>%
+  mutate(across(
+    c(Medu, Fedu, traveltime, studytime, famrel, freetime, goout, Dalc, Walc, health),
+    as.factor
+  ))
+
+#fitting the baseline, getting a summary, and making a confidence interval for the most significant result. 
+student_mod <- lm(G3 ~ sex + age + address + guardian + failures + Walc + paid + Medu + Fjob + studytime + higher, data = student)
+
+summary(student_mod)
+
+confint(student_mod)["failures",]
 ```
 
 ```{r}
 # Show a primary figure or table only if it helps answer the question.
+# showing the one-at-a-time scatter plots and box plots for the most significant results.
+ggplot(student,
+                aes(sex, G3, fill = sex)) +
+  geom_boxplot(show.legend = FALSE) +
+  labs(title = "Sex compared with final grade")
+
+ggplot(student, aes(x = failures, y = G3)) +
+    geom_point(alpha = .7)
 ```
 
 ## Going beyond the baseline

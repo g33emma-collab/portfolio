@@ -8,7 +8,7 @@ This page is a work log, not a second report. Short bullets are welcome. It is s
 
 ## Starting point
 
-**AI system and date:** Replace.
+**AI system and date:** ChatGPT 11/09/2026
 
 **Before using AI for the required extension, briefly state your question, course-based core model, baseline result, and the specific limitation or opportunity you wanted to address.**
 
@@ -16,22 +16,29 @@ This page is a work log, not a second report. Short bullets are welcome. It is s
 
 Paste the exact prompts that shaped the extension. Include the customized extension-selection prompt from the checkpoint and any important implementation follow-ups. Delete unused prompt blocks.
 
-> Replace with an exact prompt.
+> I am creating a regression case study in R and Quarto. My question is How well can we predict a student’s final grade in mathematics based on their demographics and characteristics? . The response is the final grade, an integer from 0 to 20, the main predictors are sex, age, address (rural or urban), guardian (mother, father, other), failures (how many classes they have failed), weekend alcohol consumption, whether they take extra paid classes for the course, mother education, father job, weekly study time, and whether they want to take higher education, and my course-based core model is student_mod <- lm(G3 ~ sex + age + address + guardian + failures + Walc + paid + Medu + Fjob + studytime + higher, data = student). My main result so far is that the model has a statistically significant p-value, but we have not done much testing other than that. We also noticed that failures was a statistically significant element of the model. I found this limitation or opportunity: not knowing what the best model may be for this many categorical and binary predictors. Suggest three feasible extensions that keep the core analysis connected to regression methods taught in my class. One option may be a model not taught in class used as a comparator. For each, explain how it strengthens the same research question, how its result would enter the final case study, the implementation steps, and two ways I could verify it. Do not choose for me.
 
 > Replace with another exact prompt, if needed.
 
 ## My decisions
 
-- **Accepted:** What useful advice did you use?
-- **Changed:** What did you adapt to fit your data or goals?
-- **Rejected or corrected:** What advice was unsuitable, unnecessary, or wrong?
+- **Accepted:** The helpful suggestion that it gave us was comparing the model that we have to a decision tree, because it helps to identify some more complicated patterns and relationships, without it needing to be linear. 
+- **Changed:** As of right now, we haven't had to specifically adapt anything, but we will have to take the decision tree suggestion and fit it to our data specifically. 
+- **Rejected or corrected:** The advice that we rejected from AI was because it was unnecessary. It gave us ideas on how to use model selection methods like LASSO or Ridge regression and also ideas about interactions and nonlinear methods. Since these are already within the scope of the class and things that we were planning on implementing, we didn't need accept those specific things. 
 
 **Connection to the final case study:** Identify where the extension's method and result appear on the final page and how they strengthen the course-based analysis.
+
+The decision tree extension that we make will appear on the final page under "A new direction with AI" where we will build a decision tree model, use cross validation to compare it with the final linear model that we create and likely include a plot that shows the decision tree. This will strengthen our course-based analysis because the decision tree might be better at explaining relationships, or predicting a students final grade and will help us compare differnet models we can use to find the most useful one for this specific data set. 
 
 ## Independent verification
 
 1. **Check and result:** Replace with an official source, diagnostic, simulation, manual calculation, comparison with a known method, or another suitable check.
+
+> One check that we are planning on doing that AI suggested we use is to compare the cross-validated RMSE and MEA from the linear model with the decision tree, which would be comparing this new method with a known method, and also a helpful diagnostic to use and compare. 
+
 2. **Check and result:** Replace with a different check and what you learned.
+
+> The other check that AI suggested that we're planning on using is to compare whether one model systematically out preforms the other when it comes to prediction, on a held-out sample to sample basis, which compares this method with a known method and sees if it's a better predictive fit overall. We could also use offical sources to back up the information that AI gave us to make sure it's accurate. 
 
 Link or cite verification sources where appropriate. A second AI response does not count as independent verification.
 
@@ -42,3 +49,5 @@ Link or cite verification sources where appropriate. A second AI response does n
 ## Other AI use, if any
 
 **Briefly disclose earlier debugging, proofreading, or other AI assistance. Write “None” if there was no other use.**
+
+So far, we have used AI to get an idea of what we might need to test on our data and model to find specific limitations that need to be improved upon. We also asked it what a decision tree is helpful for and what specific limitaions might lead to implementing that extension.
